@@ -1,4 +1,4 @@
-package ikhwankoto.com.explore_image_loader
+package ikhwankoto.com.explore_image_loader.Glide
 
 import android.graphics.Bitmap
 import android.graphics.Color
@@ -15,6 +15,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
 import com.bumptech.glide.request.transition.Transition
+import ikhwankoto.com.explore_image_loader.R
 import kotlinx.android.synthetic.main.activity_glide.*
 
 class GlideActivity : AppCompatActivity() {

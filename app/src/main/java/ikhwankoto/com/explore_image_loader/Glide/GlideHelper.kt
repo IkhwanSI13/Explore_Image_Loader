@@ -1,4 +1,4 @@
-package ikhwankoto.com.explore_image_loader
+package ikhwankoto.com.explore_image_loader.Glide
 
 import android.content.Context
 import android.graphics.Bitmap

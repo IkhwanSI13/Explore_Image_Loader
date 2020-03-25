@@ -1,10 +1,11 @@
-package ikhwankoto.com.explore_image_loader
+package ikhwankoto.com.explore_image_loader.Picasso
 
 import android.os.Bundle
 import android.util.Log
 import android.view.Gravity
 import androidx.appcompat.app.AppCompatActivity
 import com.squareup.picasso.Picasso
+import ikhwankoto.com.explore_image_loader.R
 import kotlinx.android.synthetic.main.activity_picasso.*
 
 class PicassoActivity : AppCompatActivity() {

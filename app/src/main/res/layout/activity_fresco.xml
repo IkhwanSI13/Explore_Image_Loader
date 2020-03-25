@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <TextView
+            android:id="@+id/tv_simple_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Simple Call"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_standart"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_simple_call" />
+
+        <Button
+            android:id="@+id/btn_standart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call Standart"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_standart" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_aspecratio"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_standart"
+            app:viewAspectRatio="1.33" />
+
+        <Button
+            android:id="@+id/btn_aspecratio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call with Aspect Ratio"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_aspecratio" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_placeholder"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_aspecratio"
+            app:placeholderImage="@drawable/ic_loading"
+            app:placeholderImageScaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/btn_placeholder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call with Placeholder"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_placeholder" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_error"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:failureImage="@drawable/ic_error"
+            app:failureImageScaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_placeholder" />
+
+        <Button
+            android:id="@+id/btn_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call with Error"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_error" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_rounded_border"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/iv_rounded_border2"
+            app:layout_constraintTop_toBottomOf="@id/btn_error"
+            app:roundBottomEnd="false"
+            app:roundedCornerRadius="18dp"
+            app:roundingBorderColor="@color/colorAccent"
+            app:roundingBorderWidth="12dp" />
+        <!--
+        Like background
+        app:roundWithOverlayColor="@color/colorBlue"
+        -->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_rounded_border2"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintLeft_toRightOf="@id/iv_rounded_border"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_error"
+            app:roundAsCircle="true"
+            app:roundingBorderColor="@color/colorAccent"
+            app:roundingBorderWidth="12dp" />
+
+        <Button
+            android:id="@+id/btn_rounded_border"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call with Rounded Border"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_rounded_border" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_progress"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_rounded_border" />
+
+        <Button
+            android:id="@+id/btn_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call with Progress"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_progress" />
+
+        <TextView
+            android:id="@+id/tv_scale_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Scale type"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_progress" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_scaletype1"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:actualImageScaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/iv_scaletype2"
+            app:layout_constraintTop_toBottomOf="@id/tv_scale_type" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_scaletype2"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:actualImageScaleType="center"
+            app:layout_constraintLeft_toRightOf="@id/iv_scaletype1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_scale_type" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_scaletype3"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:actualImageScaleType="centerInside"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/iv_scaletype4"
+            app:layout_constraintTop_toBottomOf="@id/iv_scaletype1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_scaletype4"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:actualImageScaleType="fitXY"
+            app:layout_constraintLeft_toRightOf="@id/iv_scaletype3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_scaletype1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_scaletype5"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:actualImageScaleType="fitCenter"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/iv_scaletype6"
+            app:layout_constraintTop_toBottomOf="@id/iv_scaletype3" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_scaletype6"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:actualImageScaleType="fitEnd"
+            app:layout_constraintLeft_toRightOf="@id/iv_scaletype5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_scaletype3" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_scaletype7"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:actualImageScaleType="fitStart"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/iv_scaletype8"
+            app:layout_constraintTop_toBottomOf="@id/iv_scaletype5" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_scaletype8"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:actualImageScaleType="focusCrop"
+            app:layout_constraintLeft_toRightOf="@id/iv_scaletype7"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_scaletype5" />
+
+        <Button
+            android:id="@+id/btn_scaletype"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call with ScaleType"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_scaletype7" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_rotate_auto"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:actualImageScaleType="focusCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_scaletype" />
+
+        <Button
+            android:id="@+id/btn_rotate_auto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call with Auto Rotate"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_rotate_auto" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_rotate_90"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:actualImageScaleType="focusCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_rotate_auto" />
+
+        <Button
+            android:id="@+id/btn_rotate_90"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call with Rotate 90"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_rotate_90" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
