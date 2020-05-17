@@ -3,6 +3,7 @@
     package="ikhwankoto.com.explore_image_loader">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:name=".MyApp"
@@ -12,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Fresco.FrescoActivity"></activity>
+        <activity android:name=".Coil.CoilActivity"></activity>
+        <activity android:name=".Fresco.FrescoActivity" />
         <activity android:name=".Picasso.PicassoActivity" />
         <activity android:name=".Glide.GlideActivity" />
         <activity android:name=".MainActivity">

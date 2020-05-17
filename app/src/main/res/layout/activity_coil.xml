@@ -43,22 +43,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Call Standart"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/btn_standart_clear"
-            app:layout_constraintTop_toBottomOf="@id/iv_standart" />
-
-        <Button
-            android:id="@+id/btn_standart_clear"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Clear Call"
-            app:layout_constraintLeft_toRightOf="@id/btn_standart"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_standart" />
 
         <ImageView
-            android:id="@+id/iv_gif"
+            android:id="@+id/iv_imageloader_loadrequest"
             android:layout_width="172dp"
             android:layout_height="172dp"
             android:layout_marginStart="12dp"
@@ -71,28 +62,53 @@
             tools:src="@drawable/ic_launcher_background" />
 
         <Button
-            android:id="@+id/btn_gif"
+            android:id="@+id/btn_imageloader_loadrequest"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Call Gif"
+            android:text="Call With ImageLoader and LoadRequest"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_gif" />
+            app:layout_constraintTop_toBottomOf="@id/iv_imageloader_loadrequest" />
+
+        <ImageView
+            android:id="@+id/iv_imageloader_getrequest"
+            android:layout_width="172dp"
+            android:layout_height="172dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_imageloader_loadrequest"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/btn_imageloader_getrequest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call With ImageLoader and GetRequest"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent "
+            app:layout_constraintTop_toBottomOf="@id/iv_imageloader_getrequest" />
 
         <TextView
-            android:id="@+id/tv_placeholders"
+            android:id="@+id/tv_preloading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
-            android:text="Placeholders"
+            android:text="Preloading"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_gif" />
+            app:layout_constraintTop_toBottomOf="@id/btn_imageloader_getrequest" />
 
         <ImageView
-            android:id="@+id/iv_placeholder"
+            android:id="@+id/iv_preload_memory"
             android:layout_width="172dp"
             android:layout_height="172dp"
             android:layout_marginStart="12dp"
@@ -101,21 +117,33 @@
             android:background="@color/colorPrimary"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_placeholders"
+            app:layout_constraintTop_toBottomOf="@id/tv_preloading"
             tools:src="@drawable/ic_launcher_background" />
 
         <Button
-            android:id="@+id/btn_placeholder"
+            android:id="@+id/btn_preload_memory"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Call Placeholder"
+            android:text="Simple Call"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_placeholder" />
+            app:layout_constraintTop_toBottomOf="@id/iv_preload_memory" />
+
+        <Button
+            android:id="@+id/btn_preload_memory2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call With Preload Memory"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent "
+            app:layout_constraintTop_toBottomOf="@id/btn_preload_memory" />
 
         <ImageView
-            android:id="@+id/iv_placeholder_color"
+            android:id="@+id/iv_preload_cache"
             android:layout_width="172dp"
             android:layout_height="172dp"
             android:layout_marginStart="12dp"
@@ -124,286 +152,22 @@
             android:background="@color/colorPrimary"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_placeholder"
+            app:layout_constraintTop_toBottomOf="@id/btn_preload_memory2"
             tools:src="@drawable/ic_launcher_background" />
 
         <Button
-            android:id="@+id/btn_placeholder_color"
+            android:id="@+id/btn_preload_cache"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Call With Placeholder Color"
+            android:text="Call With Preload Cache"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_placeholder_color" />
-
-        <ImageView
-            android:id="@+id/iv_error"
-            android:layout_width="172dp"
-            android:layout_height="172dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_placeholder_color"
-            tools:src="@drawable/ic_launcher_background" />
-
-        <Button
-            android:id="@+id/btn_error"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Call With Error"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_error" />
-
-        <ImageView
-            android:id="@+id/iv_fallback"
-            android:layout_width="172dp"
-            android:layout_height="172dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_error"
-            tools:src="@drawable/ic_launcher_background" />
-
-        <Button
-            android:id="@+id/btn_fallback"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Call With Fallback"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_fallback" />
+            app:layout_constraintTop_toBottomOf="@id/iv_preload_cache" />
 
         <TextView
-            android:id="@+id/tv_Options"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:text="Options"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_fallback" />
-
-        <ImageView
-            android:id="@+id/iv_request_option"
-            android:layout_width="124dp"
-            android:layout_height="124dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/iv_request_option2"
-            app:layout_constraintTop_toBottomOf="@id/tv_Options"
-            tools:src="@drawable/ic_launcher_background" />
-
-        <ImageView
-            android:id="@+id/iv_request_option2"
-            android:layout_width="124dp"
-            android:layout_height="124dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintLeft_toRightOf="@id/iv_request_option"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_Options"
-            tools:src="@drawable/ic_launcher_background" />
-
-        <Button
-            android:id="@+id/btn_request_option"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Call With Request Option"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_request_option" />
-
-        <ImageView
-            android:id="@+id/iv_request_builder"
-            android:layout_width="172dp"
-            android:layout_height="172dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_request_option"
-            tools:src="@drawable/ic_launcher_background" />
-
-        <Button
-            android:id="@+id/btn_request_builder"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Call With Request Builder"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_request_builder" />
-
-        <ImageView
-            android:id="@+id/iv_thumbnail"
-            android:layout_width="172dp"
-            android:layout_height="172dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_request_builder"
-            tools:src="@drawable/ic_launcher_background" />
-
-        <Button
-            android:id="@+id/btn_thumbnail"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Call With Thumbnail"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_thumbnail" />
-
-        <ImageView
-            android:id="@+id/iv_thumbnail_different_image"
-            android:layout_width="172dp"
-            android:layout_height="172dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_thumbnail"
-            tools:src="@drawable/ic_launcher_background" />
-
-        <Button
-            android:id="@+id/btn_thumbnail_different_image"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Call With Thumbnail Different Image"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_thumbnail_different_image" />
-
-        <ImageView
-            android:id="@+id/iv_newrequest_onfailure"
-            android:layout_width="172dp"
-            android:layout_height="172dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_thumbnail_different_image"
-            tools:src="@drawable/ic_launcher_background" />
-
-        <Button
-            android:id="@+id/btn_newrequest_onfailure"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Call with NewRequest OnFailure"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_newrequest_onfailure" />
-
-        <TextView
-            android:id="@+id/tv_transformations"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:text="Transformations"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_newrequest_onfailure" />
-
-        <ImageView
-            android:id="@+id/iv_centercrop"
-            android:layout_width="172dp"
-            android:layout_height="172dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_transformations"
-            tools:src="@drawable/ic_launcher_background" />
-
-        <Button
-            android:id="@+id/btn_centercrop"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Call With Centercrop"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_centercrop" />
-
-        <ImageView
-            android:id="@+id/iv_fitcenter"
-            android:layout_width="172dp"
-            android:layout_height="172dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_centercrop"
-            tools:src="@drawable/ic_launcher_background" />
-
-        <Button
-            android:id="@+id/btn_fitcenter"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Call With Fitcenter"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_fitcenter" />
-
-        <ImageView
-            android:id="@+id/iv_circlecrop"
-            android:layout_width="172dp"
-            android:layout_height="172dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_fitcenter"
-            tools:src="@drawable/ic_launcher_background" />
-
-        <Button
-            android:id="@+id/btn_circlecrop"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Call With Circlecrop"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_circlecrop" />
-
-        <TextView
-            android:id="@+id/tv_targets"
+            android:id="@+id/tv_target"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
@@ -411,10 +175,10 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_circlecrop" />
+            app:layout_constraintTop_toBottomOf="@id/btn_preload_cache" />
 
         <ImageView
-            android:id="@+id/iv_specifictarget"
+            android:id="@+id/iv_target"
             android:layout_width="172dp"
             android:layout_height="172dp"
             android:layout_marginStart="12dp"
@@ -423,21 +187,22 @@
             android:background="@color/colorPrimary"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_targets"
+            app:layout_constraintTop_toBottomOf="@id/tv_target"
             tools:src="@drawable/ic_launcher_background" />
 
         <Button
-            android:id="@+id/btn_specifictarget"
+            android:id="@+id/btn_target"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Call With Target"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_specifictarget" />
+            app:layout_constraintTop_toBottomOf="@id/iv_target" />
 
         <ImageView
-            android:id="@+id/iv_specifictarget_gif"
+            android:id="@+id/iv_target_custom"
             android:layout_width="172dp"
             android:layout_height="172dp"
             android:layout_marginStart="12dp"
@@ -446,29 +211,93 @@
             android:background="@color/colorPrimary"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_specifictarget"
+            app:layout_constraintTop_toBottomOf="@id/btn_target"
             tools:src="@drawable/ic_launcher_background" />
 
         <Button
-            android:id="@+id/btn_specifictarget_gif"
+            android:id="@+id/btn_target_custom"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Call With Target For GIF"
+            android:text="Call With Custom Target"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_specifictarget_gif" />
+            app:layout_constraintTop_toBottomOf="@id/iv_target_custom" />
 
         <TextView
-            android:id="@+id/tv_transition"
+            android:id="@+id/tv_transformation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
-            android:text="Transition"
+            android:text="Tranformation"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_specifictarget_gif" />
+            app:layout_constraintTop_toBottomOf="@id/btn_target_custom" />
+
+        <ImageView
+            android:id="@+id/iv_blur"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/iv_circlecrop"
+            app:layout_constraintTop_toBottomOf="@id/tv_transformation"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/iv_circlecrop"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toRightOf="@id/iv_blur"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_transformation"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/iv_grayscale"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/iv_roundedcorner"
+            app:layout_constraintTop_toBottomOf="@id/iv_blur"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/iv_roundedcorner"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toRightOf="@id/iv_grayscale"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_blur"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/btn_transformation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call With Transformation"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent "
+            app:layout_constraintTop_toBottomOf="@id/iv_roundedcorner" />
 
         <ImageView
             android:id="@+id/iv_transition"
@@ -480,7 +309,7 @@
             android:background="@color/colorPrimary"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_transition"
+            app:layout_constraintTop_toBottomOf="@id/btn_transformation"
             tools:src="@drawable/ic_launcher_background" />
 
         <Button
@@ -489,12 +318,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Call With Transition"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent "
             app:layout_constraintTop_toBottomOf="@id/iv_transition" />
 
         <ImageView
-            android:id="@+id/iv_cache"
+            android:id="@+id/iv_mapper"
             android:layout_width="172dp"
             android:layout_height="172dp"
             android:layout_marginStart="12dp"
@@ -507,14 +337,111 @@
             tools:src="@drawable/ic_launcher_background" />
 
         <Button
-            android:id="@+id/btn_cache"
+            android:id="@+id/btn_mapper"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Call Without Cache"
+            android:text="Call With Mapper"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent "
-            app:layout_constraintTop_toBottomOf="@id/iv_cache" />
+            app:layout_constraintTop_toBottomOf="@id/iv_mapper" />
+
+        <ImageView
+            android:id="@+id/iv_gif"
+            android:layout_width="172dp"
+            android:layout_height="172dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_mapper"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/btn_gif"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call GIF"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent "
+            app:layout_constraintTop_toBottomOf="@id/iv_gif" />
+
+        <ImageView
+            android:id="@+id/iv_svg"
+            android:layout_width="172dp"
+            android:layout_height="172dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_gif"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/btn_svg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call SVG"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent "
+            app:layout_constraintTop_toBottomOf="@id/iv_svg" />
+
+        <ImageView
+            android:id="@+id/iv_videoframe"
+            android:layout_width="172dp"
+            android:layout_height="172dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_svg"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/btn_videoframe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call Image from Video Frame"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent "
+            app:layout_constraintTop_toBottomOf="@id/iv_videoframe" />
+
+        <ImageView
+            android:id="@+id/iv_palette"
+            android:layout_width="172dp"
+            android:layout_height="172dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_videoframe"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/btn_palette"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call palette"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent "
+            app:layout_constraintTop_toBottomOf="@id/iv_palette" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

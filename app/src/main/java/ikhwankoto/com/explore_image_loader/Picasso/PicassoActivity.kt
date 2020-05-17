@@ -27,6 +27,10 @@ class PicassoActivity : AppCompatActivity() {
 
         title = "Picasso"
 
+        setOnclick()
+    }
+
+    fun setOnclick() {
         btn_standart.setOnClickListener {
             Picasso.get().load(urlImage).into(iv_standart)
         }
@@ -77,6 +81,6 @@ class PicassoActivity : AppCompatActivity() {
                 .placeholder(R.drawable.ic_error)
                 .into(iv_error)
         }
-
     }
+
 }
