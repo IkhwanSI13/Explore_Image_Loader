@@ -41,7 +41,7 @@ class PicassoActivity : AppCompatActivity() {
         btn_transformation.setOnClickListener {
             Picasso.get()
                 .load(urlImage)
-                .resize(50, 50)
+                .resize(172, 172)
                 .centerCrop()
                 .into(iv_transformation)
         }
@@ -49,7 +49,7 @@ class PicassoActivity : AppCompatActivity() {
         btn_centercrop_withgravity.setOnClickListener {
             Picasso.get()
                 .load(urlImage)
-                .resize(50, 50)
+                .resize(172, 172)
                 .centerCrop(Gravity.RIGHT)
                 .into(iv_centercrop_withgravity)
         }
@@ -78,7 +78,7 @@ class PicassoActivity : AppCompatActivity() {
         btn_error.setOnClickListener {
             Picasso.get()
                 .load(urlImageForFailure)
-                .placeholder(R.drawable.ic_error)
+                .error(R.drawable.ic_error)
                 .into(iv_error)
         }
     }
