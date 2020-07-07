@@ -29,10 +29,8 @@ class FrescoActivity : AppCompatActivity() {
      * data     :   data:mime/type;base64,
      * */
 
-    var urlImageForFailure =
-        "https://blabla.bla.bla/bla.png"
-    var urlImage =
-        "https://media.gettyimages.com/photos/landscape-of-a-buddha-statue-at-borobudur-in-java-indonesia-picture-id124490579?s=2048x2048"
+    var urlImageForFailure = "https://blabla.bla.bla/bla.png"
+    var urlImage = "https://8villages-dashboard.s3.amazonaws.com/1576576785-543-442248.jpg"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -80,13 +78,10 @@ class FrescoActivity : AppCompatActivity() {
         }
 
         btn_progress.setOnClickListener {
-            //iv_progress
-
             var progrssDrawable = ProgressBarDrawable()
             progrssDrawable.color = resources.getColor(R.color.colorBlue)
             progrssDrawable.backgroundColor = resources.getColor(R.color.colorAccent)
             progrssDrawable.radius = 12
-
 
             iv_progress.hierarchy.setProgressBarImage(progrssDrawable)
             iv_progress.hierarchy.setFailureImage(

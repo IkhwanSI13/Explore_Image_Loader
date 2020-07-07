@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import coil.Coil
 import coil.ImageLoader
 import coil.api.load
 import coil.decode.GifDecoder
@@ -72,10 +73,9 @@ class CoilActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_coil)
-
         // Initiation dengan coil yang berasal dari App
         // Jika imageLoader di shutdown, coil tidak akan bisa digunakan kembali
-        // imageLoader = Coil.imageLoader(this)
+//         imageLoader = Coil.imageLoader(this)
 
         // Initiation dengan Imageloader yang dikhususkan untuk kelas ini
         // Jadi jika imageLoader di shutdown, coil tetap bisa digunakan di activity yang lainnya
